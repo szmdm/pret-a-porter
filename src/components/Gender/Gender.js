@@ -1,14 +1,11 @@
-import React, { useState, useContext } from 'react';
+import React from 'react';
 import { GenderTitle, GenderContainer, GenderContainerRows } from './genderStyle';
 import { Toggle } from '../Toggle'
 import { EmptyIcon } from '../../pages/weatherStyle';
-import { ViewerContext } from '../../Contexts/ViewerContext';
 
 
-const GenderPage = () => {
+const GenderPage = ({set}) => {
 
-    // const [toggle, setToggle] = useState(false)
-    const { setToggle } = useContext(ViewerContext)
 
     return (
         <>
@@ -17,7 +14,7 @@ const GenderPage = () => {
             <GenderContainer>
                 <GenderContainerRows>
                     <EmptyIcon><p1>Man </p1></EmptyIcon>
-                    <Toggle onChange={(e) => setToggle(e.target.checked)} />
+                    <Toggle onChange={(e) => set(e.target.checked ? 'female' : 'male')} />
                     <p>Woman</p>
                 </GenderContainerRows>
             </GenderContainer>

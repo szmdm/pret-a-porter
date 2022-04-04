@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import { Home } from "./PagesStyle";
 import { SectionMain, LeftBar, RightBar, Gender, Weather, Viewer, InfoBox } from "./InsideHomeStyle"
 import WeatherPage from './Weather';
@@ -7,6 +7,7 @@ import OutfitPage from '../components/Outfit/Outfit';
 import { ViewerPage } from '../components/Viewer/Viewer'
 import { WeatherTitle, SearchPlace } from './weatherStyle';
 
+export const GenderContext = createContext();
 
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
 
     const [place, setPlace] = useState(``)
     const [placeInfo, setPlaceInfo] = useState([])
+    const [gender, setGender] = useState('male')
 
 
 
@@ -56,11 +58,12 @@ const HomePage = () => {
 
     return (
         <>
+         <GenderContext.Provider value={gender}>
             <Home>
                 <SectionMain>
                     <LeftBar>
                         <Gender>
-                            <GenderPage />
+                            <GenderPage set={setGender} />
                         </Gender>
                         <Weather>
                             <WeatherTitle>Weather</WeatherTitle>
@@ -96,6 +99,7 @@ const HomePage = () => {
                     </RightBar>
                 </SectionMain>
             </Home>
+            </GenderContext.Provider>
         </>
     );
 };
