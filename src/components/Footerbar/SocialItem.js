@@ -7,7 +7,7 @@ export const SocialItem = ({ icon, text }) => {
     return (
         <>
             <SocialItemLink>
-            <a target="_blank" href={text} title="example">{icon}</a>
+            <a href={text} rel='noopener' title="example">{icon}</a>
             </SocialItemLink>
         </>
 

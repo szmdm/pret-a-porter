@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import CarouselPageMan from '../Carousel/Carousel';
 import CarouselPageWoman from '../Carousel/CarouselWoman';
 import { ViewerTitle, ViewerContainer, } from './viewerStyle';
