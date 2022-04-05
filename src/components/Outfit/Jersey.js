@@ -4,7 +4,6 @@ import React from 'react';
 
 export const JerseyComp = ({ tempC }) => {
 
-console.log(tempC);
 
     let jersey;
 

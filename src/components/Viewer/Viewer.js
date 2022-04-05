@@ -11,13 +11,12 @@ export const ViewerPage = () => {
 
     
     const gender = useContext(GenderContext);
-    console.log(gender);
 
     return (
         <>
             <ViewerTitle>Viewer</ViewerTitle>
             <ViewerContainer>
-                <ViewerContext.Provider>
+                <ViewerContext.Provider value="">
                     {gender === 'female' ? <CarouselPageWoman slides={CarouselDataWoman} /> : <CarouselPageMan slides={CarouselDataMan} />}
                 </ViewerContext.Provider>
 

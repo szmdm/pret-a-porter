@@ -4,7 +4,6 @@ import React from 'react';
 
 export const TrousersComp = ({ tempC }) => {
 
-console.log(tempC);
 
     let trousers;
 

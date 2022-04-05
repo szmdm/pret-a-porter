@@ -4,7 +4,6 @@ import React from 'react';
 
 export const JacketComp = ({ tempC }) => {
 
-console.log(tempC);
 
     let jacket;
 
