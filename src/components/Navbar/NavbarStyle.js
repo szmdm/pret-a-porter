@@ -9,6 +9,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
+  margin-bottom: 40px;
 `;
 
 export const NavLink = styled(Link)`
@@ -40,7 +41,7 @@ export const MobileIcon = styled.div`
    position: absolute;
    top: 0;
    right: 0;
-   transform: translate(-100%, 60%);
+   transform: translate(-50%, 60%);
    font-size: 1.8rem;
    cursor: pointer;
   }

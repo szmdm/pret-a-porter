@@ -4,7 +4,8 @@ export const SectionMain = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  flex-wrap: wrap;
+  height: auto;
   width: 100%;
   padding: 0.5rem calc((100vw - 1000px) / 2);
 
@@ -16,7 +17,7 @@ export const SectionMain = styled.div`
 
 export const LeftBar = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   height: 100%;
@@ -26,7 +27,7 @@ export const LeftBar = styled.div`
 
 export const RightBar = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   height: 100%;

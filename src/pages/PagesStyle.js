@@ -19,7 +19,7 @@ export const Home = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  /* height: calc(100vh - 120px - 75px); */
 
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;

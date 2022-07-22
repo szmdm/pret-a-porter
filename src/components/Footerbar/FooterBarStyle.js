@@ -7,7 +7,7 @@ export const Footer = styled.div`
   align-items: center;
   height: 100%;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  margin-top: 75px;
+  margin-top: 25px;
 
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;

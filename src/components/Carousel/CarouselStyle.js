@@ -12,8 +12,8 @@ export const CarouselSection = styled.div`
   color: grey;
 
   .image {
-      width: 100%;
-      border-radius: 10px;
+    height: auto;
+    border-radius: 10px;
   }
 
   .rightArrow {
@@ -39,14 +39,23 @@ export const CarouselSection = styled.div`
   }
 
   .slide {
-      opacity: 0;
-      transition-duration: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    opacity: 0;
+    transition-duration: 0.5s ease;
 
   }
 
   .slide.active {
-      opacity: 1;
-      transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    opacity: 1;
+    transition-duration: 1s;
   }
 `;
 
